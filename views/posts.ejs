@@ -1,3 +1,5 @@
+<%- include('./partials/header'); -%>
+
 <h1>The Post Page</h1>
 // for loop
 <% for(var i = 0; i < posts.length; i++){ %>
@@ -12,3 +14,8 @@
         <%= post.title %> - <strong><%= post.author %></strong>
     </li>
 <% }) %>
+<%- include('./partials/footer'); -%>
+
+
+<!-- <%= %> this rendere whatever the code return inside to the html
+<%  %> just evaluate the code it does not add anything tp the html  -->

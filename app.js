@@ -1,5 +1,5 @@
 var express = require("express");
-var app = express()
+var app = express();
 //express will serve the content inpublic directory
 app.use(express.static('public'));
 //to import & tell express that our res.render files is ejs so we do not imput the extension when calling it

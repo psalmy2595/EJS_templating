@@ -6,10 +6,11 @@ var bodyParser = require("body-parser");
 //tell express to take the req.body and turn it into a javascript object for us to use called request.body
 app.use(bodyParser.urlencoded({ extended:true }));
 
-// express will serve the content inpublic directory
+// express will serve the content in public directory. it makes very thing on the public directory general  
 app.use(express.static('public'));
 // to import & tell express that our res.render files is ejs so we do not imput the extension when calling it
 app.set("view engine", "ejs");
+
 var friends = ["Tony", "Miranda", "Justin", "pierre", "Lily"];
 
 
